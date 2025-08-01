@@ -118,3 +118,24 @@ autoplot(x)
 gg_season(x)
 gg_lag(x)
 ACF(x)
+
+AMZN <- gafa_stock |> filter(Symbol == "AMZN")
+AMZN %>% autoplot(Close)
+
+AAPL <- gafa_stock %>% filter(Symbol == "AAPL")
+AAPL %>% autoplot(Close)
+
+GOOG <- gafa_stock %>% filter(Symbol == "GOOG")
+GOOG %>% autoplot(Close)
+
+FB <- gafa_stock %>% filter(Symbol == "FB")
+FB %>% autoplot(Close)
+
+olympic_running %>% filter(Year > 1932)
+
+y <- tsibble( Year = 2015:2019, Observation = c(132, 39, 78, 25, 110), index = Year )
+y
+
+
+y <- tsibble( Year = 2015:2019, Observation = c(123, 39, 78, 52, 110), index = Year )
+y
